@@ -11,6 +11,7 @@ module Pictgram
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     config.autoload_paths += Dir[Rails.root.join('app', 'uploaders')]
+    config.assets.initialize_on_precompile = false
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -18,5 +19,3 @@ module Pictgram
     # the framework and any gems in your application.
   end
 end
-
-config.assets.initialize_on_precompile = false
