@@ -48,7 +48,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
-  
+
 end
 
 group :development do
@@ -61,7 +61,7 @@ group :development do
 end
 
 group :production do
-  gem 'pq'
+  gem 'pg'
 end
 
 group :test do
