@@ -10,6 +10,6 @@ class Topic < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :favorite_users, through: :favorites, source: 'user'
 
-  has_many :comments, dependent: :destroy # @topic.comments topicからcommentsをひろってくる
+  has_many :comments # @topic.comments topicからcommentsをひろってくる
 
 end
