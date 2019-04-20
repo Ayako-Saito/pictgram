@@ -8,12 +8,13 @@
             <%= topic.user.name %>
            </h2>
             <%= image_tag topic.image.url %>
-            <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
+            
+            <p class="comment-title">Post content</p>
             <p class="topic-text">
               <%= topic.description %>
             </p>
   
-            <p class="comment-title">コメント</p>
+            <p class="comment-title">Comment</p>
 
            <% topic.comments.each do |comment| %>
             <p class="comment-text">

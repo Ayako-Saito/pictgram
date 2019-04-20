@@ -12,17 +12,14 @@ Rails.application.routes.draw do
   resources :topics do
     resources :comments
   end
-
+  
+  get '/topics', to: 'topics#show'
   delete '/topics', to: 'topics#destroy'
 
+  
   get 'favorites/index'
+
   post '/favorites', to: 'favorites#create'
   delete '/favorites', to: 'favorites#destroy'
-
-
-
-  #get 'topics/index'
-  #post '/topics/:topic_id/comments', to:'comments#create'
-  #post '/topics/index', to:'topics#index'
 
 end

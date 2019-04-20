@@ -6,6 +6,10 @@ h1, h2  {
   color: #fff;
 }
 
+.text-center{
+  margin-bottom: 30px;
+}
+
 .btn-white{
   color: #fff;
   border: 1px solid #fff;
@@ -59,7 +63,7 @@ h1, h2  {
     padding-top: 220px;
 
     .form-group{
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -139,12 +143,18 @@ h1, h2  {
 .comment-title{
   padding-right: 20px;
   padding-left: 19px;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 300;
 }
 
 .comment-text{
   padding-right: 20px;
   padding-left: 20px;
-  font-weight: 400;
+  font-weight: 200;
+}
+
+.show{
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: right;
 }
